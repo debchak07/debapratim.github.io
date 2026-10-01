@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Debapratim Chakraborty — Salesforce Marketing Cloud Developer, Data & Analytics professional and freelance digital specialist.">
+<title>Debapratim Chakraborty | SFMC • Data • Digital</title>
+<style>
+:root{--bg:#060914;--panel:#0b1020;--panel2:#10172a;--text:#f5f7ff;--muted:#9ca9bf;--cyan:#5ee7ff;--violet:#9b7cff;--green:#6ef2b1;--line:rgba(255,255,255,.09);--shadow:0 25px 90px rgba(0,0,0,.35)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 10% 0%,rgba(94,231,255,.13),transparent 28%),radial-gradient(circle at 90% 20%,rgba(155,124,255,.13),transparent 28%),var(--bg);color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(6,9,20,.75);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:19px;font-weight:900;letter-spacing:-.6px}.brand b{color:var(--cyan)}
+.links{display:flex;gap:25px;color:var(--muted);font-size:13px}.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid var(--line);border-radius:11px;font-weight:800;font-size:14px;transition:.2s}
+.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,var(--cyan),var(--violet));color:#050814;border:0}
+.hero{padding:105px 0 75px;display:grid;grid-template-columns:1.2fr .8fr;gap:65px;align-items:center}
+.kicker{display:inline-flex;padding:7px 11px;border:1px solid rgba(94,231,255,.25);background:rgba(94,231,255,.06);border-radius:99px;color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:20px}
+h1{font-size:clamp(45px,6.8vw,78px);line-height:.98;letter-spacing:-4px;max-width:850px}
+.gradient{background:linear-gradient(90deg,#fff 15%,var(--cyan) 55%,#b49cff);-webkit-background-clip:text;color:transparent}
+.hero-copy{font-size:18px;color:var(--muted);max-width:720px;margin:25px 0 30px}.actions{display:flex;gap:11px;flex-wrap:wrap}
+.orbit{position:relative;min-height:390px;display:grid;place-items:center}
+.core{width:225px;height:225px;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 35% 30%,#19294b,#0b1122 65%);border:1px solid rgba(94,231,255,.25);box-shadow:0 0 80px rgba(94,231,255,.12)}
+.core strong{font-size:28px;line-height:1.05}.core span{display:block;color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:1.4px;margin-top:8px}
+.float{position:absolute;padding:10px 13px;border:1px solid var(--line);background:rgba(16,23,42,.9);border-radius:12px;font-size:12px;color:#dce8f8;box-shadow:var(--shadow)}.f1{top:25px;right:15px}.f2{bottom:35px;left:0}.f3{top:130px;left:0}.f4{bottom:10px;right:5px}
+section{padding:82px 0;border-top:1px solid var(--line)}.eyebrow{color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.section-title{font-size:39px;letter-spacing:-1.5px;margin:7px 0}.section-intro{color:var(--muted);max-width:720px;margin-bottom:35px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:50px}.stat{padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}.stat strong{display:block;font-size:30px}.stat span{color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(150deg,rgba(16,23,42,.9),rgba(8,13,27,.9));border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 15px 50px rgba(0,0,0,.12)}
+.card h3{font-size:20px;margin-bottom:9px}.card p{color:var(--muted);font-size:14px}.num{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:1px;margin-bottom:18px}
+.timeline{display:grid;gap:17px}.role{display:grid;grid-template-columns:190px 1fr;gap:25px;padding:27px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.02)}.date{color:var(--cyan);font-size:12px;font-weight:800}.role h3{font-size:21px}.role .company{color:#fff;font-weight:700;margin-bottom:10px}.role ul{padding-left:18px;color:var(--muted);font-size:14px}.role li{margin:6px 0}
+.pills{display:flex;flex-wrap:wrap;gap:9px}.pill{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:999px;padding:9px 13px;font-size:13px;color:#dce7f6}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{min-height:250px;display:flex;flex-direction:column}.project .pill{margin-top:auto;width:max-content}
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.cert{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025);display:flex;gap:13px;align-items:center}.check{width:28px;height:28px;border-radius:9px;background:rgba(110,242,177,.1);color:var(--green);display:grid;place-items:center;font-weight:900}
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.contact-card{padding:34px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#111b32,#090e1c)}.contact-card h2{font-size:38px;line-height:1.1}.contact-card p{color:var(--muted);margin:13px 0 25px}.contact-lines{display:grid;gap:12px;color:#d9e5f5;font-size:14px}.contact-lines span{color:var(--muted);display:inline-block;width:80px}
+footer{padding:30px 0;color:var(--muted);font-size:12px;text-align:center;border-top:1px solid var(--line)}
+@media(max-width:850px){.hero,.contact{grid-template-columns:1fr}.orbit{min-height:310px}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.role{grid-template-columns:1fr}.links{display:none}}
+@media(max-width:560px){.grid,.project-grid,.cert-grid{grid-template-columns:1fr}h1{letter-spacing:-2.5px}.hero{padding-top:70px}.stats{grid-template-columns:1fr 1fr}.float{font-size:10px}.f3{left:-5px}}
+</style>
+</head>
+<body>
+
+<nav><div class="container nav">
+<a class="brand" href="#">Debapratim<b>.</b></a>
+<div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#certs">Certifications</a></div>
+<a class="btn primary" href="#contact">Work With Me</a>
+</div></nav>
+
+<main>
+<section class="hero container">
+<div>
+<div class="kicker">Salesforce Marketing Cloud • Data • Digital</div>
+<h1>I turn customer data into <span class="gradient">personalised digital experiences.</span></h1>
+<p class="hero-copy">I’m <b>Debapratim Chakraborty</b> — a Salesforce Marketing Cloud Developer and data-focused technologist specialising in multi-channel campaigns, dynamic email engineering, customer journeys, automation and analytics.</p>
+<div class="actions"><a class="btn primary" href="#contact">Start a Project →</a><a class="btn" href="#projects">Explore My Work</a></div>
+<div class="stats">
+<div class="stat"><strong>12</strong><span>Global markets supported</span></div>
+<div class="stat"><strong>7</strong><span>Professional certifications</span></div>
+<div class="stat"><strong>4+</strong><span>Years combined experience</span></div>
+<div class="stat"><strong>4</strong><span>Marketing channels</span></div>
+</div>
+</div>
+<div class="orbit">
+<div class="core"><div><strong>SFMC<br>+</strong><span>DATA INTELLIGENCE</span></div></div>
+<div class="float f1">AMPscript • SSJS</div><div class="float f2">SQL • Python • Tableau</div><div class="float f3">Journey Builder</div><div class="float f4">HTML Email Engineering</div>
+</div>
+</section>
+
+<section id="about"><div class="container">
+<div class="eyebrow">01 / Profile</div><h2 class="section-title">Technical depth with a marketing mindset.</h2>
+<p class="section-intro">My work sits at the intersection of CRM, marketing technology, front-end development and data analytics. I build solutions that connect customer data, campaign logic and communication experiences.</p>
+<div class="grid">
+<div class="card"><div class="num">01 — CAMPAIGNS</div><h3>Multi-channel delivery</h3><p>End-to-end customer engagement across Email, SMS, Push and In-App, from build and QA through UAT, production deployment and performance analysis.</p></div>
+<div class="card"><div class="num">02 — PERSONALISATION</div><h3>Dynamic experiences</h3><p>AMPscript, HTML and CSS-driven content using customer attributes, regional logic and recommendation-oriented personalisation.</p></div>
+<div class="card"><div class="num">03 — DATA</div><h3>Data-led decisioning</h3><p>SQL, Python, Tableau, R and Salesforce Data 360 concepts applied to segmentation, analytics, unification and marketing decision support.</p></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="container">
+<div class="eyebrow">02 / Experience</div><h2 class="section-title">Enterprise delivery experience.</h2>
+<p class="section-intro">Selected experience from Cognizant and Trimplin, including enterprise marketing programmes and data analytics engagements.</p>
+<div class="timeline">
+<div class="role"><div class="date">DEC 2023 — PRESENT</div><div><h3>Associate — Cognizant</h3><div class="company">Salesforce Marketing Cloud Developer</div><ul>
+<li>Delivered transactional and triggered campaigns across Email, SMS and Push through UAT and Production.</li>
+<li>Built multi-step journeys using Decision Splits, Einstein, Send Time Optimisation and Join activities for APAC engagement.</li>
+<li>Managed Send Classifications and analysed campaign performance through Marketing Cloud reports and dashboards.</li>
+<li>Created personalised email and Mobile Studio content with AMPscript and automated recurring campaigns using Automation Studio and Journey Builder.</li>
+</ul></div></div>
+<div class="role"><div class="date">FEB 2025 — PRESENT</div><div><h3>JDE Peet’s — L’OR & Tassimo</h3><div class="company">Global Marketing Programme • 12 Markets</div><ul>
+<li>Build dynamic, code-heavy email content using AMPscript, HTML and CSS with region- and customer-attribute-driven recommendation logic.</li>
+<li>Own campaign creation, preview, QA and cross-device/cross-client testing, resolving rendering issues across email clients and devices.</li>
+<li>Design and manage Journey Builder journeys with Splits and Send Time Optimisation, integrated with Automation Studio.</li>
+</ul></div></div>
+<div class="role"><div class="date">OCT 2024 — DEC 2025</div><div><h3>Johnson & Johnson — Vision Care APAC</h3><div class="company">Enterprise Customer Engagement</div><ul>
+<li>Delivered transactional and triggered communications across Email, SMS and Push for business requirements spanning the APAC region.</li>
+<li>Built personalised customer journeys and supported campaign performance analysis through Marketing Cloud reporting.</li>
+<li>Designed personalised Mobile Studio and email content and supported recurring campaign automation.</li>
+</ul></div></div>
+<div class="role"><div class="date">APR 2022 — SEP 2023</div><div><h3>Technical Specialist — Trimplin</h3><div class="company">Data Analytics & Business Intelligence</div><ul>
+<li>Led data analysis projects using Python, R, Advanced Excel, Tableau and SQL Server Management Studio.</li>
+<li>Built interactive Tableau dashboards and visualisations for data-driven stakeholder decisions.</li>
+<li>Applied statistical modelling and predictive analytics to support business strategy.</li>
+<li>Worked directly with clients across multiple geographies to align data solutions with business needs.</li>
+</ul></div></div>
+</div>
+</div></section>
+
+<section id="expertise"><div class="container">
+<div class="eyebrow">03 / Expertise</div><h2 class="section-title">The full toolkit.</h2>
+<p class="section-intro">A broad technical stack, anchored by Salesforce Marketing Cloud and strengthened by development and analytics capabilities.</p>
+<div class="grid">
+<div class="card"><h3>Salesforce Marketing Cloud</h3><div class="pills"><span class="pill">Email Studio</span><span class="pill">Mobile Studio</span><span class="pill">Journey Builder</span><span class="pill">Automation Studio</span><span class="pill">Contact Builder</span><span class="pill">Data Designer</span><span class="pill">Content Builder</span><span class="pill">CloudPages</span><span class="pill">Web Collect Forms</span><span class="pill">A/B Testing</span><span class="pill">IP Warming</span></div></div>
+<div class="card"><h3>Development & Scripting</h3><div class="pills"><span class="pill">AMPscript</span><span class="pill">SSJS</span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Bootstrap</span><span class="pill">Apex</span><span class="pill">Lightning Web Components</span></div></div>
+<div class="card"><h3>Data & Analytics</h3><div class="pills"><span class="pill">SQL</span><span class="pill">Python</span><span class="pill">R</span><span class="pill">Tableau</span><span class="pill">Advanced Excel</span><span class="pill">Data 360</span><span class="pill">Data Unification</span><span class="pill">Identity Resolution</span></div></div>
+<div class="card"><h3>Salesforce Sales & Service</h3><div class="pills"><span class="pill">Objects</span><span class="pill">Security & Sharing</span><span class="pill">Data Management</span><span class="pill">Validation Rules</span><span class="pill">Process Automation</span><span class="pill">Apex</span><span class="pill">LWC</span></div></div>
+<div class="card"><h3>Integrations & Platforms</h3><div class="pills"><span class="pill">FormAssembly</span><span class="pill">IQVIA OCE Digital</span><span class="pill">SFMC APIs</span><span class="pill">OAuth</span></div></div>
+<div class="card"><h3>Marketing Technology</h3><div class="pills"><span class="pill">Braze</span><span class="pill">Personalisation</span><span class="pill">Segmentation</span><span class="pill">Lifecycle Campaigns</span><span class="pill">Triggered Sends</span></div></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="container">
+<div class="eyebrow">04 / Selected Projects</div><h2 class="section-title">From campaign code to customer intelligence.</h2>
+<p class="section-intro">Projects that show how I combine marketing technology, development and data science.</p>
+<div class="project-grid">
+<div class="card project"><div class="num">01 / SFMC</div><h3>Dynamic Global Email Programme</h3><p>Designed code-heavy, personalised email experiences using AMPscript, HTML and CSS, with regional and customer-attribute logic for a 12-market programme. Included QA and cross-client rendering optimisation.</p><span class="pill">AMPscript • HTML • CSS • 12 markets</span></div>
+<div class="card project"><div class="num">02 / INTEGRATION</div><h3>FormAssembly → SFMC</h3><p>Implemented FormAssembly integration concepts to streamline lead and data capture into Salesforce Marketing Cloud, supporting more connected campaign workflows.</p><span class="pill">Integration • Data Capture • SFMC</span></div>
+<div class="card project"><div class="num">03 / CLOUD</div><h3>CloudPages & Technical Specifications</h3><p>Designed CloudPages from the ground up and authored technical specification documentation to translate campaign requirements into maintainable implementation.</p><span class="pill">CloudPages • Documentation</span></div>
+<div class="card project"><div class="num">04 / DATA SCIENCE</div><h3>Predictive Customer Intelligence</h3><p>An AI-driven framework connecting customer segmentation, churn prediction, Customer Lifetime Value and Next-Best-Action recommendations for personalised marketing.</p><span class="pill">Python • ML • Customer Analytics</span></div>
+<div class="card project"><div class="num">05 / WEB</div><h3>Lead Generation Business Website</h3><p>Responsive front-end website concept built around lead capture, clear calls-to-action and a clean user journey.</p><span class="pill">HTML • CSS • JavaScript</span></div>
+<div class="card project"><div class="num">06 / ANALYTICS</div><h3>Business Intelligence Dashboards</h3><p>Built interactive Tableau dashboards and performed analysis using Python, R, SQL Server and Advanced Excel to convert raw data into actionable insights.</p><span class="pill">Tableau • Python • R • SQL</span></div>
+</div>
+</div></section>
+
+<section id="certs"><div class="container">
+<div class="eyebrow">05 / Certifications</div><h2 class="section-title">Certified across the ecosystem.</h2>
+<p class="section-intro">Professional certifications spanning Marketing Cloud, Salesforce administration and development, Data 360, Braze and AI architecture foundations.</p>
+<div class="cert-grid">
+<div class="cert"><div class="check">✓</div><div>Salesforce Certified Marketing Cloud Email Specialist</div></div>
+<div class="cert"><div class="check">✓</div><div>Salesforce Certified Marketing Cloud Engagement Administrator</div></div>
+<div class="cert"><div class="check">✓</div><div>Salesforce Certified Platform Administrator</div></div>
+<div class="cert"><div class="check">✓</div><div>Salesforce Certified Platform Developer I</div></div>
+<div class="cert"><div class="check">✓</div><div>Salesforce Certified Data 360 Consultant</div></div>
+<div class="cert"><div class="check">✓</div><div>Braze Certified Marketer</div></div>
+<div class="cert"><div class="check">✓</div><div>Claude Certified Architect — Foundations (CCA F)</div></div>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="eyebrow">06 / Education</div><h2 class="section-title">Engineering roots. Data science direction.</h2>
+<div class="grid">
+<div class="card"><h3>M.Sc. in Data Science</h3><p>Vellore Institute of Technology (VIT) — In Progress</p></div>
+<div class="card"><h3>B.Tech in Electrical Engineering</h3><p>Academy of Technology, Hooghly, West Bengal — 2023</p></div>
+<div class="card"><h3>Beyond the CV</h3><p>Interests include writing, music and football.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="container contact">
+<div class="contact-card"><div class="eyebrow">07 / Let’s work</div><h2>Need an SFMC developer who can also speak data?</h2><p>I’m available for freelance campaign builds, HTML email development, AMPscript/SQL work, SFMC troubleshooting, automation, analytics and digital projects.</p><a class="btn primary" href="mailto:debchakraborty02@gmail.com">Start a Conversation →</a></div>
+<div class="contact-card"><h3>Debapratim Chakraborty</h3><div class="contact-lines">
+<div><span>Email</span> debchakraborty02@gmail.com</div>
+<div><span>LinkedIn</span> linkedin.com/in/debapratim-chakraborty-31947816b</div>
+<div><span>Location</span> India</div>
+<div><span>Focus</span> SFMC • Email • Data • Digital</div>
+</div></div>
+</div></section>
+</main>
+<footer>© 2026 Debapratim Chakraborty · Salesforce Marketing Cloud · Data & Digital</footer>
+</body>
+</html>
